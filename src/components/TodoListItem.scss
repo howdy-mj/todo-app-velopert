@@ -1,4 +1,13 @@
-.TodoListIem {
+.TodoListItem-virtualized {
+  & + & {
+    border-top: 1px solide #dee2e6;
+  }
+  &:nth-child(even) {
+    background: #f8f9fa;
+  }
+}
+
+.TodoListItem {
   padding: 1rem;
   display: flex;
   align-items: center; // 세로 중앙 정렬
@@ -43,7 +52,7 @@
   }
 
   // 엘리먼트 사이 테두리에 넣음
-  & + & {
-    border-top: 1px solid #dee2e6;
-  }
+  // & + & {
+  //   border-top: 1px solid #dee2e6;
+  // }
 }
